@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 function Settings() {
   const [selectedSetting, setSelectedSetting] = useState(null);
@@ -48,19 +48,13 @@ function Settings() {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Navigation */}
-      <nav className="bg-white shadow-md p-4 flex justify-between items-center">
+      <nav className=" shadow-md p-4 flex justify-between items-center bg-gray-900">
         {/* Twitter logo */}
         <div className="flex items-center">
-          <svg className="w-10 h-10 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-            <g>
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M21.484 5.515a6.01 6.01 0 01-1.712.47A3.01 3.01 0 0021.422 4a6.01 6.01 0 01-1.913.73A3.003 3.003 0 0015.99 2c-1.656 0-3 1.344-3 3 0 .234.027.465.08.688A8.56 8.56 0 014.83 4.817a3 3 0 00-.414 1.512c0 1.044.531 1.965 1.338 2.504a2.98 2.98 0 01-1.368-.377v.038c0 1.456 1.047 2.667 2.431 2.943a3.02 3.02 0 01-1.364.052c.383 1.201 1.496 2.08 2.821 2.104A6.017 6.017 0 013 15.02c0-.091.005-.182.016-.273A8.533 8.533 0 0010.55 17c5.592 0 8.658-4.64 8.452-8.747a6.202 6.202 0 001.482-1.573z"
-              ></path>
-            </g>
-          </svg>
-          <a href='/' className="text-xl font-bold ml-2">Twitter</a>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="6">
+  <path d="M30 70 Q 50 20 70 70" />
+</svg>
+          <a href='/' className="text-xl font-bold   ml-2">Sabar's Tweet</a>
         </div>
         {/* Search input */}
         <div className="flex">
